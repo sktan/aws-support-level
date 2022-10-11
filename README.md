@@ -20,7 +20,7 @@ This version of the tool uses an undocumented SupportPlans API provided by AWS t
 
 You will notice that I am using the us-east-2 region and that is intended. Even though the Support Console runs in the us-east-1 region, this API is only available in us-east-2 from what I've found.
 
-```console
+```text
 # Install the pipenv requirements and open a shell
 sktan ➜ /workspaces/aws-support-level (master ✗) $ pipenv install
 sktan ➜ /workspaces/aws-support-level (master ✗) $ pipenv shell
