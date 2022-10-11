@@ -82,7 +82,7 @@ NOTE: If running against a singlular account, you will not receive any CSV file 
 
 This method isn't as feature-rich and only supports the current account you're authenticated to. It currently only provides you a guesstimate of your AWS support level based on the information in the [Choosing a Severity](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html#choosing-severity) section of the AWS Support User Guide.
 
-```
+```text
 # Run this against the current account
 (aws-support-level) sktan ➜ /workspaces/aws-support-level (master ✗) $ python support-level.py
 Your AWS support level is: BASIC
