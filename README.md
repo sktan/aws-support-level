@@ -20,7 +20,7 @@ This version of the tool uses an undocumented SupportPlans API provided by AWS t
 
 You will notice that I am using the us-east-2 region and that is intended. Even though the Support Console runs in the us-east-1 region, this API is only available in us-east-2 from what I've found.
 
-```
+```console
 # Install the pipenv requirements and open a shell
 sktan ➜ /workspaces/aws-support-level (master ✗) $ pipenv install
 sktan ➜ /workspaces/aws-support-level (master ✗) $ pipenv shell
@@ -53,7 +53,7 @@ Your AWS support level is: BASIC
 
 When running the command, you will get an ouptut of the tool's actions and which accounts it's currently performing API actions against. Once this is completed, it will spit out an `output.csv` file which looks like:
 
-```
+```csv
 awsid,supportplan
 0123456789012,ENTERPRISE
 0123456789013,BUSINESS
@@ -63,9 +63,9 @@ awsid,supportplan
 
 NOTE: If running against a singlular account, you will not receive any CSV file output.
 
-### Required IAM Permissions
+### Required IAM Permissions - support-level-direct.py
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -88,9 +88,9 @@ This method isn't as feature-rich and only supports the current account you're a
 Your AWS support level is: BASIC
 ```
 
-### Required IAM Permissions
+### Required IAM Permissions - support-level.py
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
