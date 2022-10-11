@@ -3,7 +3,7 @@
 This tool helps you identify the AWS support level of the following:
 
 - Your current AWS account
-- A list of AWS account ids
+- A list of AWS Account IDs
 - All the accounts in your AWS organisation
 
 I'm using Python 3.10 to develop and run this, but anything python 3.7 and above should work as long as you have the following Python libraries installed:
