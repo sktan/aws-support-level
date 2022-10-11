@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+boto3 = "*"
+awscrt = "*"
+requests = "*"
+
+[dev-packages]
+pre-commit = "*"
+isort = "*"
+black = "*"
+boto3-stubs = {extras = ["support", "sts", "organizations"], version = "*"}
+
+[requires]
+python_version = "3.10"
